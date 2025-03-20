@@ -1,0 +1,111 @@
+.secondary-navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.secondary-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* All Categories Button */
+.all-categories-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.all-categories-btn:hover {
+  color: #0072bc;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  padding: 5px 0;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #0072bc;
+}
+
+.nav-link svg {
+  font-size: 16px;
+}
+
+/* Stock Price */
+.stock-price {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  background-color: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.stock-arrow {
+  color: #00c853;
+  font-size: 12px;
+}
+
+.price {
+  font-weight: 600;
+  color: #333;
+}
+
+.change.positive {
+  color: #00c853;
+  font-weight: 500;
+}
+
+.label {
+  color: #666;
+  font-size: 12px;
+  margin-left: 2px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stock-price {
+    display: none;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .all-categories-btn span {
+    display: none;
+  }
+} 
