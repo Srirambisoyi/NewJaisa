@@ -1,0 +1,143 @@
+.category-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.category-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.category-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color: #333;
+  position: relative;
+}
+
+.category-title .highlight {
+  color: #00a651;
+  position: relative;
+}
+
+.category-title .highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00a651;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+  transform: translateY(-8px);
+}
+
+.category-image-container {
+  width: 160px;
+  height: 160px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.category-item:hover .category-image-container {
+  box-shadow: 0 8px 20px rgba(0, 114, 188, 0.15);
+  background-color: #f0f8ff;
+  border: 2px solid #e6f2ff;
+}
+
+.category-image {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.category-item:hover .category-image {
+  transform: scale(1.1);
+}
+
+.category-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.category-item:hover .category-name {
+  color: #0072bc;
+}
+
+.category-icon {
+  font-size: 64px;
+  color: #0072bc;
+  transition: all 0.3s ease;
+}
+
+.category-item:hover .category-icon {
+  transform: scale(1.1);
+  color: #00a651;
+}
+
+@media screen and (max-width: 768px) {
+  .category-grid {
+    gap: 25px;
+  }
+  
+  .category-item {
+    width: 130px;
+  }
+  
+  .category-image-container {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .category-name {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .category-grid {
+    gap: 20px;
+  }
+  
+  .category-item {
+    width: 110px;
+  }
+  
+  .category-image-container {
+    width: 110px;
+    height: 110px;
+  }
+} 
